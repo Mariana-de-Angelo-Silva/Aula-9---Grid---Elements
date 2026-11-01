@@ -2,35 +2,136 @@
   padding: 0;
   box-sizing: border-box;}
 
-
+body{
+    background-color: antiquewhite;
+}
 .conteiner{
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 30vh 10vh 40vh 20vh;
+    grid-template-rows: 25vh 5vh 80vh 40vh;
     margin: 5px;
     gap: 10px;
 }
 
+/* ================== CSS DO HEADER =====================*/
 header{
     grid-column: 1/-1;
 
     display: grid;
     grid-template-columns: auto 1fr;
-    gap: 50px;}
+    gap: 5px;
 
             .logo{
                 border-radius: 20px;
-                background-color: #dd81af;
-
+                background-color: #ec9ea0;
+                margin: 5px;
 
                 display: flex;
                 align-items: center;
                 justify-content: center;}
 
                         .logo img{
-                            height: 100px;
-                            width: 300px;
+                            height: 200px;
+                            width: 250px;
                         }
 
+            .titulo{
+                border-radius: 20px;
+                background-color: #ec9ea0;
+                margin: 5px;
 
-            
+                display: flex;
+                align-items: center;
+                justify-content: center;}
+
+                p{ color: #713D40;
+                  font-size: 90px;
+                    font-family: Imperial Script
+                }
+                  
+                    .imperial-script-regular{
+                    font-family: "Imperial Script", cursive;
+                    font-weight: 400;
+                    font-style: normal;
+                    }
+   
+}
+
+/*====================================================================*/
+
+
+/* ================== CSS DO NAV =====================*/
+nav{
+    grid-column: 1/-1;
+    background-color: #98a58a;
+    gap: 50px;
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+        nav a{
+            text-decoration: none;
+            font-size: 20px;
+            font-family: Habibi;
+            color: #553435;
+        }
+
+        nav a:hover{
+            font-size: 30px;
+            color: #D8B982;
+        }
+
+
+        .habibi-regular {
+            font-family: "Habibi", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+
+
+/*====================================================================*/
+
+
+/* ================== CSS DO MAIN =====================*/
+
+main{
+    grid-column: -1/1;
+    background-color: #A95F55;
+    border-radius: 30px;
+    margin: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    main img{
+        width: 95%;
+        height: 90%;
+        border-radius: 10px;
+    }
+
+
+/* ================== CSS DO FOOTER =====================*/
+footer{
+    grid-column: -1/1;
+    background-color: #a9557f;
+    border-radius: 30px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    footer img{
+        width: 10%;
+        height: 250px;
+        margin: auto;
+        border-radius: 10px;
+    }
+
+/*====================================================================*/
